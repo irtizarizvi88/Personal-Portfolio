@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGHA | Full Stack Developer & AI Specialist</title>
+
+  <!-- FAVICON -->
+ <link rel="shortcut icon" href="Assets/favicon-32x32.png" type="image/x-icon">
+
+  <meta name="description" content="Professional portfolio of AGHA, a premium Full Stack Developer specializing in AI Automation, n8n integrations, OpenAI API, and responsive web systems.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome CDN (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <!-- Devicon CDN (for tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<!-- --- WHATSAPP FLOATING BUTTON --- -->
+<a href="https://wa.me/923306853209?text=Hi%20AGHA%2C%20I%20want%20to%20discuss%20a%20project." 
+   class="whatsapp-float-btn" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+<body class="loading">
+
+  <!-- --- 1. PAGE LOADER --- -->
+  <div id="loader-wrapper" class="loader-wrapper">
+    <div class="loader-logo">AGHA</div>
+    <div class="loader-text">Loading Portfolio...</div>
+    <div class="loader-progress-bg">
+      <div id="loader-progress" class="loader-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- --- 0. TOP MARQUEE TICKER BAR --- -->
+  <div class="ticker-bar">
+    <div class="ticker-wrap">
+      <div class="ticker-content">
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- BACK TO TOP BUTTON --- -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- --- 2. NAVBAR --- -->
+  <nav id="header-nav" class="header-nav">
+    <div class="navbar-container">
+      <a href="#home" class="logo">AGHA</a>
+      
+      <!-- --- 2. NAVBAR (UPDATED LINKS) --- -->
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#github-activity" class="nav-link">GitHub</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#blogs" class="nav-link">Blogs</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#faq" class="nav-link">FAQ</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+<!-- --- 3. HERO SECTION --- -->
+  <section id="home" class="hero-section">
+    <!-- Parallax grayscaled background shapes -->
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+    
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <div class="availability-badge">
+          <span class="availability-dot"></span>
+          Currently Available for Projects
+        </div>
+        <span class="hero-greeting">Welcome to my space</span>
+        <h1 class="hero-title">Hi, I'm AGHA</h1>
+        <div class="hero-typing-wrap">
+          I'm a&nbsp;<span id="typewriter" class="typewriter-text"></span>
+        </div>
+        <p class="hero-desc">
+          I build high-performance web applications and automated AI systems that save businesses hours of manual work. Let's design and deploy custom digital dashboards and AI workflows to scale your operations.
+        </p>
+        <!-- Updated Button Group -->
+        <div class="btn-group">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="Assets/cv.pdf" onclick="downloadCV(); return false;" class="btn btn-secondary">Download CV</a>
+          <a href="consultation.html" class="btn btn-outline">Book Consultation</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual reveal">
+        <div class="profile-frame-wrap">
+          <div class="profile-ring"></div>
+          <div class="profile-ring-glow"></div>
+          <div class="profile-frame">
+            <img src="Assets/agha-dp.png" alt="AGHA Profile picture">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="about" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Who I Am</span>
+      <h2 class="section-title">About Me</h2>
+    </div>
+    
+    <div class="about-grid">
+      <div class="about-img-wrap reveal reveal-left">
+        <div class="about-img-frame">
+          <img src="Assets/download.jpg" alt="AGHA working portrait">
+        </div>
+      </div>
+      
+      <div class="about-content reveal reveal-right">
+        <p class="about-bio">
+          I am a Full-Stack Developer and Automation Engineer who designs high-performance websites, client management dashboards, and automated database syncs. I specialize in building fast, scalable software solutions using React, Node.js, PostgreSQL, and MongoDB.
+        </p>
+        <p class="about-bio mb-12">
+          My core expertise is integrating advanced AI (OpenAI & Gemini API) and designing automated tools that eliminate manual work. Whether it is a custom dashboard, secure cloud deployment, or linking external CRM systems, I build end-to-end web products designed to make your business run more efficiently.
+        </p>
+        
+        <div class="about-details">
+          <div class="about-detail-item">
+            <h4>01+</h4>
+            <p>Year of Active Core Development</p>
+          </div>
+          <div class="about-detail-item">
+            <h4>10+</h4>
+            <p>Production Apps & Workflows Delivered</p>
+          </div>
+          <div class="about-detail-item">
+            <h4>100%</h4>
+            <p>Client Satisfaction & Success Rate</p>
+          </div>
+          <div class="about-detail-item">
+            <h4>10+</h4>
+            <p>Modern APIs & Databases Integrated</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- GITHUB ACTIVITY SECTION --- -->
+<section id="github-activity" class="section pt-0">
+  <div class="section-header reveal">
+    <span class="section-subtitle">Code in Motion</span>
+    <h2 class="section-title">GitHub Activity</h2>
+  </div>
+
+  <div class="github-graph-wrap reveal">
+    <img src="https://ghchart.rshah.org/39d353/irtizarizvi88" alt="AGHA's GitHub Contribution Graph" class="github-graph-img">
+    <a href="https://github.com/irtizarizvi88" target="_blank" class="btn btn-secondary mt-8">
+      View Full Profile <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+    </a>
+  </div>
+</section>
+
+<!-- === 5. SKILLS SECTION === -->
+<section id="skills" class="section">
+  <div class="section-header reveal">
+    <span class="section-subtitle">What I Work With</span>
+    <h2 class="section-title">Core Skills</h2>
+  </div>
+  
+  <div class="skills-grid">
+    
+    <!-- LAYER 1: FRONTEND & CORE -->
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-html5-plain colored"></i></div><span class="skill-name">HTML5</span></div><div class="card-back"><h4 class="back-title">HTML5</h4><p class="back-desc">Semantic markup, SEO optimization, and structural foundation for modern web apps.</p></div></div></div>
+    
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-css3-plain colored"></i></div><span class="skill-name">CSS3</span></div><div class="card-back"><h4 class="back-title">CSS3</h4><p class="back-desc">Advanced layouts using Flexbox/Grid, custom variables, and responsive stylesheets.</p></div></div></div>
+    
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div><span class="skill-name">JavaScript</span></div><div class="card-back"><h4 class="back-title">JavaScript</h4><p class="back-desc">ES6+, async programming, DOM manipulation, and dynamic client-side logic.</p></div></div></div>
+    
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-typescript-plain colored"></i></div><span class="skill-name">TypeScript</span></div><div class="card-back"><h4 class="back-title">TypeScript</h4><p class="back-desc">Strict type-safety, interface design, and scalable architecture for complex systems.</p></div></div></div>
+
+    <!-- LAYER 2: FRAMEWORKS & BACKEND -->
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-react-original colored"></i></div><span class="skill-name">React.js</span></div><div class="card-back"><h4 class="back-title">React.js</h4><p class="back-desc">Component-driven UI, custom hooks, state management, and virtual DOM performance.</p></div></div></div>
+    
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="36" height="36" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#000"/><path d="M102.392 110.385L50.5693 44H38v40h9.2435V54.9664l42.6685 54.4986c4.275-2.529 8.214-5.558 11.77-9.08z" fill="#fff"/><rect x="85" y="44" width="9.2435" height="40" fill="#fff"/></svg></div><span class="skill-name">Next.js</span></div><div class="card-back"><h4 class="back-title">Next.js</h4><p class="back-desc">Production-grade SSR, static generation, app router optimization, and API paths.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-tailwindcss-original colored"></i></div><span class="skill-name">Tailwind</span></div><div class="card-back"><h4 class="back-title">Tailwind CSS</h4><p class="back-desc">Utility-first styling, design tokens, responsive grids, and ultra-fast UI rendering.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div><span class="skill-name">Node.js</span></div><div class="card-back"><h4 class="back-title">Node.js</h4><p class="back-desc">Event-driven, asynchronous backend runtimes for heavy concurrent traffic.</p></div></div></div>
+
+    <!-- LAYER 3: DATABASE & AUTOMATION -->
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-python-plain colored"></i></div><span class="skill-name">Python</span></div><div class="card-back"><h4 class="back-title">Python</h4><p class="back-desc">Scripting, advanced automation, data transformations, and custom AI tooling agent engines.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/supabase.svg" class="invert-img" alt="Supabase logo"></div><span class="skill-name">Supabase</span></div><div class="card-back"><h4 class="back-title">Supabase</h4><p class="back-desc">Open-source Firebase alternative, real-time subscriptions, and scalable PostgreSQL backend.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-firebase-plain colored"></i></div><span class="skill-name">Firebase</span></div><div class="card-back"><h4 class="back-title">Firebase</h4><p class="back-desc">Cloud Firestore, authentication, serverless functions, and real-time database management.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-mongodb-plain colored"></i></div><span class="skill-name">MongoDB</span></div><div class="card-back"><h4 class="back-title">MongoDB</h4><p class="back-desc">NoSQL flexible dynamic schemas, complex aggregation pipelines, and big indexing loops.</p></div></div></div>
+
+    <!-- LAYER 4: TOOLS & INFRA -->
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div><span class="skill-name">PostgreSQL</span></div><div class="card-back"><h4 class="back-title">PostgreSQL</h4><p class="back-desc">Relational databases, optimized structured querying, transactions, and robust schemas.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="fa-solid fa-network-wired text-cyan"></i></div><span class="skill-name">REST APIs</span></div><div class="card-back"><h4 class="back-title">REST APIs</h4><p class="back-desc">Secure microservice routing, standardized endpoints, parameters, and CRUD controllers.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><img src="https://api.iconify.design/logos:openai-icon.svg" class="invert-img" alt="OpenAI logo"></div><span class="skill-name">OpenAI</span></div><div class="card-back"><h4 class="back-title">OpenAI API</h4><p class="back-desc">LLM processing, customized multi-agent prompts, semantic fine-tuning, and neural vectors.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-docker-plain colored"></i></div><span class="skill-name">Docker</span></div><div class="card-back"><h4 class="back-title">Docker</h4><p class="back-desc">Application containerization, sandbox image setups, microservices orchestration.</p></div></div></div>
+
+    <!-- LAYER 5: DESIGN & DEVOPS -->
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-github-original colored text-white"></i></div><span class="skill-name">GitHub</span></div><div class="card-back"><h4 class="back-title">Git Engine</h4><p class="back-desc">Version control, branch protection workflows, secure CI/CD, and conflict resolution.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-wordpress-plain colored text-wp"></i></div><span class="skill-name">WordPress</span></div><div class="card-back"><h4 class="back-title">WordPress</h4><p class="back-desc">Custom theme integration, high-tier corporate web layouts, and plugin optimization.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div><span class="skill-name">AWS</span></div><div class="card-back"><h4 class="back-title">AWS Cloud</h4><p class="back-desc">Cloud storage infrastructure, routing layers, server hosting buckets, and static drops.</p></div></div></div>
+
+    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z" fill="#F24E1E"/><path d="M4 6a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#FF7262"/><path d="M4 14a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#A259FF"/><path d="M12 10a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z" fill="#1ABC9C"/><path d="M4 22a4 4 0 0 1 4-4h4v4H8a4 4 0 0 1-4-4z" fill="#0ACF83"/></svg></div><span class="skill-name">Figma</span></div><div class="card-back"><h4 class="back-title">Figma UI/UX</h4><p class="back-desc">High-fidelity wireframes, responsive autolayout, design systems, and micro-flows.</p></div></div></div>
+  </div>
+</section>
+  <!-- --- 5.2 SERVICES SECTION --- -->
+  <section id="services" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">What I Offer</span>
+      <h2 class="section-title">My Services</h2>
+    </div>
+
+    <div class="services-grid reveal">
+      <!-- Service 1 -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <h3 class="service-title">AI & Chatbot Integration</h3>
+        <p class="service-desc">
+          Automate customer service, qualify leads, and extract intelligence from logs by syncing custom LLMs (OpenAI/Gemini) directly to your active channels.
+        </p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Custom Prompt Engineering</li>
+          <li><i class="fa-solid fa-circle-check"></i> Vector DB & Embedding Setup</li>
+          <li><i class="fa-solid fa-circle-check"></i> Slack & WhatsApp Integrations</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary">Inquire Now</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+        <h3 class="service-title">Workflow Automation</h3>
+        <p class="service-desc">
+          Eliminate repetitive tasks and administrative bottlenecks. I link your CRM, email servers, databases, and sheets into smooth automation loops via n8n.
+        </p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> n8n & Make Workflow Design</li>
+          <li><i class="fa-solid fa-circle-check"></i> Webhook & API Synchronization</li>
+          <li><i class="fa-solid fa-circle-check"></i> Error Alerting & Healing Systems</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary">Optimize Work</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card">
+        <div class="service-icon-wrap">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="service-title">Full-Stack Web Development</h3>
+        <p class="service-desc">
+          Build high-speed, secure web portals, customer dashboards, and internal business platforms tailored exactly to your scaling operational needs.
+        </p>
+        <ul class="service-features-list">
+          <li><i class="fa-solid fa-circle-check"></i> Next.js, React & Node.js Core</li>
+          <li><i class="fa-solid fa-circle-check"></i> Supabase & Postgres Database</li>
+          <li><i class="fa-solid fa-circle-check"></i> Responsive Pixel-Perfect Layouts</li>
+        </ul>
+        <a href="#contact" class="btn btn-secondary">Build Platform</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 5.5 PROCESS (HOW I WORK) SECTION --- -->
+  <section id="process" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Execution Framework</span>
+      <h2 class="section-title">How I Work</h2>
+    </div>
+
+    <div class="process-container reveal">
+      <div class="process-timeline-line"></div>
+      
+      <div class="process-grid">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="step-number-wrap">
+            <div class="step-number">01</div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Discovery & Architecture</h3>
+            <p class="step-desc">
+              We align on your business targets, map out data flow models, analyze your API documentation, and blueprint the complete system infrastructure before writing a single line of code.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="step-number-wrap">
+            <div class="step-number">02</div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Full-Stack Engineering</h3>
+            <p class="step-desc">
+              Building high-performance, production-grade applications using clean, scalable architecture (Next.js/MERN). Every module is engineered for speed, responsiveness, and strict type-safety.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="step-number-wrap">
+            <div class="step-number">03</div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">AI & Automation Sync</h3>
+            <p class="step-desc">
+              Integrating advanced multi-agent prompt engines (OpenAI/Gemini) and connecting robust n8n automation loops, system webhooks, and secure database cron jobs to supercharge operations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="step-number-wrap">
+            <div class="step-number">04</div>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Deployment & Optimization</h3>
+            <p class="step-desc">
+              Containerizing systems with Docker and deploying to robust cloud servers (AWS/Vercel) with staging parity checks, comprehensive speed audits, and optimized tracking setups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+ 
+  <!-- --- 6. PROJECTS SECTION --- -->
+  <section id="projects" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">My Portfolio</span>
+      <h2 class="section-title">Featured Projects</h2>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1: Al-Mustafa Academy -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="Assets/almustafa-academy.png" alt="Al-Mustafa Academy Organization Portal">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">OpenAI API</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">MongoDB</span>
+            <span class="project-tag">Framer Motion</span>
+          </div>
+          <h3 class="project-title">Al-Mustafa Academy Portal</h3>
+          <p class="project-desc">
+            An automated organization management ecosystem featuring high-end micro-interactions, automated student certification loops, and OpenAI-driven operational insights.
+          </p>
+          <div class="project-links">
+            <button class="project-btn project-btn-primary" onclick="openCaseStudy('almustafa')">Case Study</button>
+            <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2: The Book Ship -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="Assets/the-book-ship.png" alt="The Book Ship Platform">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">Gemini API</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">Stripe API</span>
+            <span class="project-tag">Redis</span>
+            <span class="project-tag">Node.js</span>
+          </div>
+          <h3 class="project-title">The Book Ship</h3>
+          <p class="project-desc">
+            A premium AI-powered e-commerce platform integrated with Gemini API for semantic book summaries, fast Redis caching pipelines, and secure Stripe payment gateways.
+          </p>
+          <div class="project-links">
+            <button class="project-btn project-btn-primary" onclick="openCaseStudy('bookship')">Case Study</button>
+            <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 3: Mathematician (Sir Mujtaba Kamal) -->
+      <div class="project-card reveal">
+        <div class="project-img">
+          <img src="Assets/mujtaba-kamal.png" alt="Sir Mujtaba Kamal Academic Platform">
+        </div>
+        <div class="project-content">
+          <div class="project-tags">
+            <span class="project-tag">React.js</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">Zustand</span>
+            <span class="project-tag">GSAP</span>
+            <span class="project-tag">Express.js</span>
+          </div>
+          <h3 class="project-title">Academic LMS Portal</h3>
+          <p class="project-desc">
+            A bespoke LMS and academic architecture built with ultra-smooth GSAP scroll effects, robust database structures for student tracking portals, and premium test modules.
+          </p>
+          <div class="project-links">
+            <button class="project-btn project-btn-primary" onclick="openCaseStudy('mathematician')">Case Study</button>
+            <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="projects-footer reveal">
+      <a href="projects.html" class="btn btn-secondary">Show More <i class="fa-solid fa-arrow-right-long ml-3"></i></a>
+    </div>
+  </section>
+
+ 
+  <!-- --- 6.5 CERTIFICATIONS SECTION --- -->
+<section id="certifications" class="section">
+  <div class="section-header reveal">
+    <span class="section-subtitle">Verified Expertise</span>
+    <h2 class="section-title">Certifications</h2>
+  </div>
+
+  <div class="cert-grid">
+    <!-- Certification 1: MERN Stack -->
+    <div class="cert-card reveal">
+      <div class="cert-img">
+        <img src="Assets/Gemini_Generated_Image_2dww8j2dww8j2dww.png" alt="MERN Stack Developer Certificate">
+      </div>
+      <div class="cert-card-body">
+        <div class="cert-card-top">
+          <span class="cert-badge-year">2026</span>
+        </div>
+        <h3 class="cert-title">MERN Stack Developer</h3>
+        <span class="cert-issuer">Saylani Mass IT Training (SMIT)</span>
+        <p class="cert-desc">
+          Full-fledged training in MongoDB, Express.js, React.js, and Node.js — covering full stack architecture, REST APIs, authentication, and deployment.
+        </p>
+        <a href="certs/cert-mern.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+    <!-- Certification 2: CIT -->
+    <div class="cert-card reveal">
+      <div class="cert-img">
+        <img src="Assets/jdc.jpg" alt="Certificate in Information Technology - JDC Foundation">
+      </div>
+      <div class="cert-card-body">
+        <div class="cert-card-top">
+          <span class="cert-badge-year">2025</span>
+        </div>
+        <h3 class="cert-title">Certificate in Information Technology</h3>
+        <span class="cert-issuer">JDC Foundation Pakistan</span>
+        <p class="cert-desc">
+          Foundational IT program (Batch 07) covering core computing concepts, systems literacy, and practical technology applications.
+        </p>
+        <a href="certs/cert-jdc-it.jpg" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+    <!-- Certification 3: UI/UX -->
+    <div class="cert-card reveal">
+      <div class="cert-img">
+        <img src="Assets/uiux.png" alt="Mastering UI/UX Course Certificate - Innovista">
+      </div>
+      <div class="cert-card-body">
+        <div class="cert-card-top">
+          <span class="cert-badge-year">2025</span>
+        </div>
+        <h3 class="cert-title">Mastering UI/UX Course</h3>
+        <span class="cert-issuer">Innovista Learn Easy</span>
+        <p class="cert-desc">
+          In-depth course on user interface and user experience design principles, wireframing, prototyping, and modern design systems.
+        </p>
+        <a href="certs/cert-uiux.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-footer reveal">
+    <a href="certifications.html" class="btn btn-secondary">Show More <i class="fa-solid fa-arrow-right-long ml-3"></i></a>
+  </div>
+</section>
+
+  <!-- --- 7. BLOGS & ARTICLES SECTION --- -->
+  <section id="blogs" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Weekly Knowledge</span>
+      <h2 class="section-title">Blogs & Articles</h2>
+    </div>
+    
+    <div class="blogs-grid">
+      <!-- Blog 1: Client Vetting -->
+      <div class="blog-card reveal">
+        <div class="blog-img">
+          <img src="Assets/blog-1.png" alt="Client Vetting and Professional Red Flags">
+        </div>
+        <div class="blog-content">
+          <span class="blog-date">June 15, 2026</span>
+          <h3 class="blog-title">The Art of Vetting: Why You Shouldn't Work with Every Client</h3>
+          <p class="blog-desc">
+            An honest breakdown of why jumping into projects without assessing client compatibility, scope clarity, and professional alignment will derail your agency's momentum.
+          </p>
+          <a href="blog-details.html" class="blog-link">Read Blog <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Blog 2: Multitasking Pitfalls -->
+      <div class="blog-card reveal">
+        <div class="blog-img">
+          <img src="Assets/blog-2.png" alt="The Myth of Multitasking in Engineering">
+        </div>
+        <div class="blog-content">
+          <span class="blog-date">May 28, 2026</span>
+          <h3 class="blog-title">The High Cost of Context Switching: Why Multitasking Destroys Code Quality</h3>
+          <p class="blog-desc">
+            Exploring how handling multiple complex projects simultaneously causes cognitive fatigue, drains billable hours, and produces sub-par, hard-to-maintain architecture.
+          </p>
+          <a href="blog-details.html" class="blog-link">Read Blog <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      
+      <!-- Article 3: Technical/Development Architecture -->
+      <div class="blog-card reveal">
+        <div class="blog-img">
+          <img src="Assets/blog-3.png" alt="Modern AI-Driven Architecture Planning">
+        </div>
+        <div class="blog-content">
+          <span class="blog-date">April 12, 2026</span>
+          <h3 class="blog-title">Building Scalable Digital Ecosystems with Next.js & Microservices</h3>
+          <p class="blog-desc">
+            A technical blueprint detailing how to structure enterprise-grade web applications utilizing decentralized APIs, robust state logic, and modern caching layers.
+          </p>
+          <a href="article-details.html" class="blog-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Show More Button in Corner/Footer Layout -->
+    <div class="projects-footer reveal mt-8">
+      <a href="blog.html" class="btn btn-secondary">Show More <i class="fa-solid fa-arrow-right-long ml-3"></i></a>
+    </div>
+  </section>
+ 
+
+<!-- --- TESTIMONIALS SECTION --- -->
+<section id="testimonials" class="section">
+  <div class="section-header reveal">
+    <span class="section-subtitle">Client Voices</span>
+    <h2 class="section-title">What Our Clients Say</h2>
+  </div>
+  
+  <div class="testimonials-slider-container reveal">
+    <div id="testimonials-track" class="testimonials-track">
+
+      <!-- Slide 1 - Almustafa Academy -->
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="client-avatar">
+            <img src="Assets/about.jpg" alt="Agha Talib" class="client-img">
+            <img src="Assets/download (1).png" alt="Pakistan Flag" class="client-flag">
+          </div>
+          
+          <h3 class="client-name">Agha Talib</h3>
+          <span class="client-role">Founder & Director, Almustafa Academy • Pakistan</span>
+          
+          <!-- Company Logo -->
+          <div class="company-logo">
+            <img src="Assets/Almustafa-Logo-RGB-final-e1656549038124.png" alt="Almustafa Academy Logo">
+          </div>
+          
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          
+          <p class="testimonial-text">
+            "AGHA completely transformed our online presence and operations at Almustafa Academy. He built a modern, fast, and user-friendly website with automated systems that have made student registrations, course management, and communication much smoother. Everything is running perfectly. Highly professional and talented developer!"
+          </p>
+          
+          <div class="testimonial-footer">
+            <span class="testimonial-date">June 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 - Sir Mujtaba Kamal -->
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="client-avatar">
+            <img src="Assets/Sir Mujtaba-Kamal.webp" alt="Sir Mujtaba Kamal" class="client-img">
+            <img src="Assets/download.png" alt="Pakistan Flag" class="client-flag">
+          </div>
+          
+          <h3 class="client-name">Sir Mujtaba Kamal</h3>
+          <span class="client-role">Mathematician | Master's in Mathematics, University of Karachi</span>
+          
+          <!-- Company Logo -->
+          <div class="company-logo">
+            <img src="Assets/karachi-university-logo.png" alt="University of Karachi">
+          </div>
+          
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          
+          <p class="testimonial-text">
+            "AGHA developed a clean and professional website for my academic profile and online mathematics courses. The platform is fast, responsive, and perfectly showcases my work. He understood my requirements very well and delivered everything on time with excellent quality. Truly a skilled and reliable developer."
+          </p>
+          
+          <div class="testimonial-footer">
+            <span class="testimonial-date">June 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 - The Book Ship -->
+      <div class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="client-avatar">
+            <img src="https://picsum.photos/id/1005/128/128" alt="Fakher" class="client-img">
+            <img src="Assets/dow" alt="Iran Flag" class="client-flag">
+          </div>
+          
+          <h3 class="client-name">Fakher</h3>
+          <span class="client-role">Founder, The Book Ship • Iran</span>
+          
+          <!-- Company Logo -->
+          <div class="company-logo">
+            <img src="Assets/bookship-logo.png" alt="The Book Ship Logo">
+          </div>
+          
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          
+          <p class="testimonial-text">
+            "AGHA built a beautiful and fully functional e-commerce website for The Book Ship. The design is elegant, the user experience is smooth, and the website performs excellently. He was very professional, communicative, and delivered the project exactly as we envisioned. I highly recommend his services."
+          </p>
+          
+          <div class="testimonial-footer">
+            <span class="testimonial-date">June 2026</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Controls -->
+    <div class="slider-controls">
+      <button id="slider-prev" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
+      <div id="slider-dots" class="slider-dots"></div>
+      <button id="slider-next" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section> 
+
+
+    <!-- Controls -->
+    <div class="slider-controls">
+      <button id="slider-prev" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
+      <div id="slider-dots" class="slider-dots"></div>
+      <button id="slider-next" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+  <!-- --- 8.5 FAQ SECTION --- -->
+    <section id="faq" class="section bg-alt">
+      <div class="section-header reveal">
+        <span class="section-subtitle">Common Queries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-container reveal">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item reveal">
+          <button class="faq-question" aria-expanded="false">
+            <span>What custom AI and automation integrations do you provide?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              I build custom LLM-powered systems using the OpenAI and Gemini APIs, integrated with advanced multi-agent prompt flows, automated backend cron jobs, and seamless workspace integrations via n8n workflows and custom REST APIs.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What is your typical project turnaround time?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Turnaround depends entirely on the system complexity. A custom responsive web landing page or a basic automation workflow can take 3–7 days, while robust, production-grade full-stack systems (MERN/Next.js) with dynamic databases take anywhere between 2 to 4 weeks.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Do you build websites on WordPress and Shopify too?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes. While I specialize in custom web architectures like Next.js and React, I offer advanced theme development, custom Liquid styling edits, plugin optimizations, and backend tracking syncs for both WordPress and Shopify platforms.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do we handle project communication and tracking?</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              I ensure complete transparent architecture tracking. We will align via Slack or WhatsApp for everyday updates, use GitHub for version control updates, and set up staging/preview drops so you can test live progress throughout the design and engineering sprints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- --- 8.8 PROJECT PLANNER SECTION (LEAD GEN) --- -->
+  <section id="planner" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Scope Estimate</span>
+      <h2 class="section-title">Project Planner</h2>
+    </div>
+
+    <div class="planner-widget reveal">
+      <h3 class="planner-title">Plan Your System & Get an Estimate</h3>
+      <p class="planner-subtitle">Select the modules you need to see a ballpark cost and timeline instantly. Claim 20% off when you submit your plan.</p>
+      
+      <div class="planner-grid">
+        <div class="planner-options-col">
+          <h3 class="planner-section-title">1. Select Required Modules</h3>
+          <div class="planner-options-grid">
+            <div class="planner-option-card selected" onclick="togglePlannerOption(this)">
+              <input type="checkbox" id="mod-ai" checked>
+              <div class="planner-option-info">
+                <h4>AI Chatbots & Agents</h4>
+                <p>OpenAI/Gemini integrations</p>
+              </div>
+            </div>
+            
+            <div class="planner-option-card selected" onclick="togglePlannerOption(this)">
+              <input type="checkbox" id="mod-auto" checked>
+              <div class="planner-option-info">
+                <h4>n8n Workflow Sync</h4>
+                <p>CRM, emails & database loops</p>
+              </div>
+            </div>
+            
+            <div class="planner-option-card" onclick="togglePlannerOption(this)">
+              <input type="checkbox" id="mod-frontend">
+              <div class="planner-option-info">
+                <h4>Custom Web Portal</h4>
+                <p>Frontend dashboards & UI</p>
+              </div>
+            </div>
+            
+            <div class="planner-option-card" onclick="togglePlannerOption(this)">
+              <input type="checkbox" id="mod-database">
+              <div class="planner-option-info">
+                <h4>Database & Custom API</h4>
+                <p>Postgres/MongoDB secure setup</p>
+              </div>
+            </div>
+          </div>
+          
+          <h3 class="planner-section-title">2. Choose Complexity Level</h3>
+          <div class="planner-slider-group">
+            <div class="planner-slider-header">
+              <span>System Size / Scope</span>
+              <span id="scope-value-display" class="value-display">Medium Integration</span>
+            </div>
+            <input type="range" id="planner-scope-slider" class="planner-range-input" min="1" max="3" value="2" oninput="updatePlannerCalculations()">
+          </div>
+        </div>
+        
+        <div class="planner-results-col">
+          <div class="planner-results-panel">
+            <div class="planner-result-item">
+              <div class="planner-result-label">Estimated Investment</div>
+              <div id="planner-price-display" class="planner-result-value">$480 <span>(20% Off Included)</span></div>
+            </div>
+            
+            <div class="planner-result-item">
+              <div class="planner-result-label">Projected Delivery</div>
+              <div id="planner-timeline-display" class="planner-timeline-value">5–8 Days</div>
+            </div>
+            
+            <a href="#contact" onclick="prefillContactFormFromPlanner()" class="btn btn-primary w-full">Claim Offer & Start Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 9. CONTACT SECTION --- -->
+  <section id="contact" class="section">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-info reveal reveal-left">
+        <!-- Phone Card -->
+        <a href="tel:+923306853209" class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="contact-card-content">
+            <h4>Call Directly</h4>
+            <p>+92 330 6853209</p>
+          </div>
+        </a>
+        
+        <!-- Email Card -->
+        <a href="mailto:agha.irtiza.rizvi@gmail.com" class="contact-card">
+          <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-card-content">
+            <h4>Email Me</h4>
+            <p>agha.irtiza.rizvi@gmail.com</p>
+          </div>
+        </a>
+        
+        <!-- Consultation CTA Card -->
+        <div class="consultation-cta-card">
+          <i class="fa-solid fa-calendar-check fa-2xl"></i>
+          <h4>Need a Custom System?</h4>
+          <p>Book a free 30-minute discovery call to map out your web dashboard or AI workflows.</p>
+          <a href="consultation.html" class="btn btn-primary">Book Consultation</a>
+        </div>
+      </div>
+      
+      <div class="contact-form-container reveal reveal-right">
+        <!-- Success Banner -->
+        <div id="contact-success" class="success-banner">
+          Thank you! Your message has been sent successfully. AGHA will contact you shortly.
+        </div>
+        
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+            <span class="error-message">This field is required.</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+            <span class="error-message">Please enter a valid email address.</span>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" placeholder="Describe your web app or automation project..." required></textarea>
+            <span class="error-message">Message must be at least 10 characters long.</span>
+          </div>
+          
+          <button type="submit" class="btn btn-primary w-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- 10. FOOTER --- -->
+  <footer class="footer">
+    <!-- Curved Wave Divider -->
+    <svg class="footer-divider-svg" viewBox="0 0 1440 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,10 C360,20 720,0 1080,10 C1260,15 1380,18 1440,10 L1440,20 L0,20 Z"></path>
+    </svg>
+    
+    <div class="footer-grid">
+      <div class="footer-branding">
+        <a href="#home" class="logo">AGHA</a>
+        <p class="footer-desc">
+          Building state-of-the-art AI automation agentic loops and high-performance modern web portals. Strict monochrome aesthetics.
+        </p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to get monthly automation insights and layout tutorials.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; alert('Subscribed successfully!');">
+          <input type="email" class="newsletter-input" placeholder="Your email..." required>
+          <button type="submit" class="btn btn-primary newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 AGHA. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="offer.html">Active Offer</a>
+        <a href="consultation.html">Consultation</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

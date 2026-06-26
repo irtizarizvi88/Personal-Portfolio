@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications | AGHA - Full Stack Developer & AI Specialist</title>
+  <meta name="description" content="Complete list of certifications earned by AGHA across IT fundamentals, web development, UI/UX design, and AI/tech workshops.">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FontAwesome CDN (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Devicon CDN (for tech logos) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <!-- --- 1. PAGE LOADER --- -->
+  <div id="loader-wrapper" class="loader-wrapper">
+    <div class="loader-logo">AGHA</div>
+    <div class="loader-text">Loading Certifications...</div>
+    <div class="loader-progress-bg">
+      <div id="loader-progress" class="loader-progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- --- 0. TOP MARQUEE TICKER BAR --- -->
+  <div class="ticker-bar">
+    <div class="ticker-wrap">
+      <div class="ticker-content">
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 2. NAVBAR --- -->
+  <nav id="header-nav" class="header-nav">
+    <div class="navbar-container">
+      <a href="index.html#home" class="logo">AGHA</a>
+
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="certifications.html" class="nav-link active">Certifications</a></li>
+        <li><a href="index.html#blogs" class="nav-link">Blogs</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- --- PAGE HEADER --- -->
+  <section class="section pb-0">
+    <div class="section-header reveal">
+      <span class="section-subtitle">Verified Expertise</span>
+      <h2 class="section-title">All Certifications</h2>
+    </div>
+    <p class="cert-page-intro reveal">
+      A complete record of courses, certifications, and tech events I've completed and participated in — spanning IT fundamentals, web development, design, and AI.
+    </p>
+  </section>
+
+  <!-- --- CATEGORY FILTERS --- -->
+  <section class="section pt-0">
+    <div class="filter-tabs reveal">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="it">IT & Software</button>
+      <button class="filter-tab" data-filter="webdev">Web Development</button>
+      <button class="filter-tab" data-filter="uiux">UI/UX Design</button>
+      <button class="filter-tab" data-filter="events">Workshops & Events</button>
+    </div>
+
+    <div class="cert-grid" id="cert-grid">
+
+      <!-- MERN Stack -->
+      <div class="cert-card reveal" data-category="webdev">
+        <div class="cert-img">
+          <img src="certs/cert-mern.png" alt="MERN Stack Developer Certificate">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2026</span>
+          </div>
+          <h3 class="cert-title">MERN Stack Developer</h3>
+          <span class="cert-issuer">Saylani Mass IT Training (SMIT)</span>
+          <p class="cert-desc">
+            Full-fledged training in MongoDB, Express.js, React.js, and Node.js — covering full stack architecture, REST APIs, authentication, and deployment.
+          </p>
+          <a href="certs/cert-mern.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- CIT - JDC -->
+      <div class="cert-card reveal" data-category="it">
+        <div class="cert-img">
+          <img src="certs/cert-jdc-it.jpg" alt="Certificate in Information Technology - JDC Foundation">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">Certificate in Information Technology</h3>
+          <span class="cert-issuer">JDC Foundation Pakistan</span>
+          <p class="cert-desc">
+            Foundational IT program (Batch 07) covering core computing concepts, systems literacy, and practical technology applications.
+          </p>
+          <a href="certs/cert-jdc-it.jpg" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- HTML Essentials - Cisco -->
+      <div class="cert-card reveal" data-category="webdev">
+        <div class="cert-img">
+          <img src="certs/cert-html.png" alt="HTML Essentials Certificate - Cisco Networking Academy">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">HTML Essentials</h3>
+          <span class="cert-issuer">Cisco Networking Academy (via Saylani Welfare Trust)</span>
+          <p class="cert-desc">
+            Certified in semantic HTML structuring, accessibility fundamentals, and modern markup standards through the Cisco Networking Academy program.
+          </p>
+          <a href="certs/cert-html.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- CSS Essentials - Cisco -->
+      <div class="cert-card reveal" data-category="webdev">
+        <div class="cert-img">
+          <img src="certs/cert-css.png" alt="CSS Essentials Certificate - Cisco Networking Academy">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">CSS Essentials</h3>
+          <span class="cert-issuer">Cisco Networking Academy (via Saylani Welfare Trust)</span>
+          <p class="cert-desc">
+            Covers responsive styling, layout systems (Flexbox/Grid), and modern CSS design patterns for production-ready interfaces.
+          </p>
+          <a href="certs/cert-css.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- JS Essentials - Cisco -->
+      <div class="cert-card reveal" data-category="webdev">
+        <div class="cert-img">
+          <img src="certs/cert-js.png" alt="JavaScript Essentials Certificate - Cisco Networking Academy">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">JavaScript Essentials 1</h3>
+          <span class="cert-issuer">Cisco Networking Academy (via Saylani Welfare Trust)</span>
+          <p class="cert-desc">
+            Core JavaScript programming certification covering variables, functions, DOM manipulation, and foundational logic building.
+          </p>
+          <a href="certs/cert-js.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- UI/UX - Innovista -->
+      <div class="cert-card reveal" data-category="uiux">
+        <div class="cert-img">
+          <img src="certs/cert-uiux.png" alt="Mastering UI/UX Course Certificate - Innovista">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">Mastering UI/UX Course</h3>
+          <span class="cert-issuer">Innovista Learn Easy</span>
+          <p class="cert-desc">
+            In-depth course on user interface and user experience design principles, wireframing, prototyping, and modern design systems.
+          </p>
+          <a href="certs/cert-uiux.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <!-- AI Agent Workshop - Tech Arena Event -->
+      <div class="cert-card reveal" data-category="events">
+        <div class="cert-img">
+          <img src="certs/cert-aiagent-event.png" alt="AI Agent Workshop Certificate - Tech Arena">
+        </div>
+        <div class="cert-card-body">
+          <div class="cert-card-top">
+            <span class="cert-badge-year">2025</span>
+          </div>
+          <h3 class="cert-title">AI Agent Workshop — Tech Arena</h3>
+          <span class="cert-issuer">Google Developers Group (DHA Suffa University) × TeknoFest Pakistan</span>
+          <p class="cert-desc">
+            Participated in a hands-on workshop exploring AI agent design and implementation, hosted as part of the Tech Arena event at TeknoFest Pakistan 3.0.
+          </p>
+          <a href="certs/cert-aiagent-event.png" class="cert-link" target="_blank">View Credential <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer">
+    <!-- Curved Wave Divider -->
+    <svg class="footer-divider-svg" viewBox="0 0 1440 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,10 C360,20 720,0 1080,10 C1260,15 1380,18 1440,10 L1440,20 L0,20 Z"></path>
+    </svg>
+
+    <div class="footer-grid">
+      <div class="footer-branding">
+        <a href="index.html#home" class="logo">AGHA</a>
+        <p class="footer-desc">
+          Building state-of-the-art AI automation agentic loops and high-performance modern web portals. Strict monochrome aesthetics.
+        </p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to get monthly automation insights and layout tutorials.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; alert('Subscribed successfully!');">
+          <input type="email" class="newsletter-input" placeholder="Your email..." required>
+          <button type="submit" class="btn btn-primary newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 AGHA. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="offer.html">Active Offer</a>
+        <a href="consultation.html">Consultation</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>

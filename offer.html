@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Offer | AGHA</title>
+  <meta name="description" content="Limited time offer: get 20% off your first AI automation or full stack development project this month. Claim your spot now.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome CDN (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- --- 0. TOP MARQUEE TICKER BAR --- -->
+  <div class="ticker-bar">
+    <div class="ticker-wrap">
+      <div class="ticker-content">
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">First 3 Clients This Month Get 20% Off <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+        <span class="ticker-item">Supercharge Your Business With AI Integrations <a href="offer.html" class="ticker-link">Claim Now →</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- --- 2. NAVBAR --- -->
+  <nav id="header-nav" class="header-nav scrolled">
+    <div class="navbar-container">
+      <a href="index.html#home" class="logo">AGHA</a>
+      
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+        <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+        <li><a href="index.html#blogs" class="nav-link">Blogs</a></li>
+        <li><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- --- MAIN OFFER BANNER SECTION --- -->
+  <main class="section pt-20 min-h-80">
+    
+    <div class="offer-banner reveal active">
+      <span class="section-subtitle">Exclusive Client Promotion</span>
+      <h2 class="section-title mb-8">20% Off For First 3 Clients</h2>
+      <p>I am opening slots for exactly three new partners this month. Claim your discount now to lock in priority project queue delivery and custom integrations.</p>
+    </div>
+
+    <!-- JS Countdown Timer -->
+    <div class="countdown-container reveal active">
+      <!-- Days -->
+      <div class="countdown-box">
+        <span id="days" class="countdown-digit">00</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <!-- Hours -->
+      <div class="countdown-box">
+        <span id="hours" class="countdown-digit">00</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <!-- Minutes -->
+      <div class="countdown-box">
+        <span id="minutes" class="countdown-digit">00</span>
+        <span class="countdown-label">Mins</span>
+      </div>
+      <!-- Seconds -->
+      <div class="countdown-box">
+        <span id="seconds" class="countdown-digit">00</span>
+        <span class="countdown-label">Secs</span>
+      </div>
+    </div>
+
+    <!-- Offer details / Why book now -->
+    <div class="offer-details-grid reveal active">
+      <div class="offer-details-content">
+        <h3>What Is Included In The Offer?</h3>
+        <ul class="offer-details-list">
+          <li>
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>20% Flat Rate Discount</h4>
+              <p>Applied directly to all development, deployment, and API configuration costs for your first build.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>Priority Pipeline Delivery</h4>
+              <p>Your systems are moved to the top of my engineering queue, guaranteeing a faster launch window.</p>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>1 Month Post-Launch Audit</h4>
+              <p>Includes free optimization reviews, workflow troubleshooting, and model usage reports.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="offer-details-content">
+        <h3>Why Partner With Me Now?</h3>
+        <p class="about-bio mb-8">
+          AI integrations can be complex. Unlike traditional developers who build isolated frontends, I design end-to-end setups where your web layout communicates natively with automation pipelines and vector search stores.
+        </p>
+        <p class="about-bio">
+          By claiming one of these three slots, you get direct architecture engineering tailored exactly to your database structure and business goals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Claim Your Spot Form -->
+    <div class="offer-claim-section reveal active">
+      <h3>Claim Your 20% Discount Slot</h3>
+      
+      <div class="contact-form-container">
+        <!-- Success Banner -->
+        <div id="claim-success" class="success-banner">
+          Success! Your discount spot has been requested. AGHA will email you back within 12 hours.
+        </div>
+
+        <form id="claim-form" novalidate>
+          <div class="form-group">
+            <label for="claim-name" class="form-label">Full Name</label>
+            <input type="text" id="claim-name" class="form-control" placeholder="John Doe" required>
+            <span class="error-message">This field is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="claim-email" class="form-label">Email Address</label>
+            <input type="email" id="claim-email" class="form-control" placeholder="john@example.com" required>
+            <span class="error-message">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="claim-service" class="form-label">Service Needed</label>
+            <select id="claim-service" class="form-control">
+              <option value="workflow">AI Workflows (n8n & OpenAI)</option>
+              <option value="fullstack">Full Stack Web Application</option>
+              <option value="clones">Custom Clone / Refactoring</option>
+              <option value="other">General Strategic Consulting</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Project Details</label>
+            <textarea id="message" class="form-control" placeholder="Provide a brief description of what you want automated or engineered..." required></textarea>
+            <span class="error-message">Message must be at least 10 characters long.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-full">Claim My Spot Now</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- --- FOOTER --- -->
+  <footer class="footer">
+    <svg class="footer-divider-svg" viewBox="0 0 1440 20" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,10 C360,20 720,0 1080,10 C1260,15 1380,18 1440,10 L1440,20 L0,20 Z"></path>
+    </svg>
+    
+    <div class="footer-grid">
+      <div class="footer-branding">
+        <a href="index.html#home" class="logo">AGHA</a>
+        <p class="footer-desc">
+          Building state-of-the-art AI automation agentic loops and high-performance modern web portals. Strict monochrome aesthetics.
+        </p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" class="social-icon" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com" class="social-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://instagram.com" class="social-icon" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe to get monthly automation insights and layout tutorials.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; alert('Subscribed successfully!');">
+          <input type="email" class="newsletter-input" placeholder="Your email..." required>
+          <button type="submit" class="btn btn-primary newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span class="footer-copyright">© 2026 AGHA. All Rights Reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="offer.html">Active Offer</a>
+        <a href="consultation.html">Consultation</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
