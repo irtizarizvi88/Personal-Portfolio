@@ -250,6 +250,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- 6.8 SKILLS FILTERING (index.html) ---
+  const skillFilterTabs = document.querySelectorAll('#skills-filter-tabs .filter-tab');
+  const skillCards = document.querySelectorAll('.skills-grid .skill-card');
+
+  if (skillFilterTabs.length > 0 && skillCards.length > 0) {
+    skillFilterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Toggle Active Tab Style
+        skillFilterTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const category = tab.getAttribute('data-filter');
+
+        skillCards.forEach(card => {
+          card.style.transition = 'transform 0.4s ease, opacity 0.4s ease';
+
+          const cardCategories = card.getAttribute('data-category') ? card.getAttribute('data-category').split(' ') : [];
+
+          if (category === 'all' || cardCategories.includes(category)) {
+            card.style.display = 'block';
+            setTimeout(() => {
+              card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
+            }, 50);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 400);
+          }
+        });
+      });
+    });
+  }
+
   // --- 7. TESTIMONIALS CAROUSEL SLIDER ---
   const track = document.getElementById('testimonials-track');
   const slides = document.querySelectorAll('.testimonial-slide');
@@ -997,3 +1033,161 @@ window.switchModalTab = switchModalTab;
 window.togglePlannerOption = togglePlannerOption;
 window.updatePlannerCalculations = updatePlannerCalculations;
 window.prefillContactFormFromPlanner = prefillContactFormFromPlanner;
+
+// ==========================================
+// --- AI CHATBOT ENGINE ---
+// ==========================================
+document.addEventListener('DOMContentLoaded', () => {
+  const triggerBtn = document.getElementById('chatbot-trigger');
+  const closeBtn = document.getElementById('chatbot-close-btn');
+  const chatWindow = document.getElementById('chatbot-window');
+  const messageForm = document.getElementById('chatbot-input-form');
+  const inputField = document.getElementById('chatbot-input-field');
+  const messagesContainer = document.getElementById('chatbot-messages');
+  const suggestButtons = document.querySelectorAll('.chatbot-suggest-btn');
+
+  if (!triggerBtn || !chatWindow) return;
+
+  const chatbotKnowledge = {
+    services: "Agha's core services include:\n\n1. **AI & Chatbot Integration**: Integrating custom LLMs (OpenAI/Gemini) inside WhatsApp, Slack, or websites.\n2. **Workflow Automation**: Automating repetitive workflows and system syncs using n8n and Make.\n3. **Full-Stack Development**: Building high-speed, secure dashboards and custom web apps with React, Next.js, and Node.js.\n\nType **'hire'** to discuss a project!",
+    
+    projects: "Agha has delivered high-performance systems, including these top 3 featured projects:\n\n1. **Al-Mustafa Academy Portal**: Next.js & OpenAI portal saving 95% of admin work.\n2. **The Book Ship**: AI-powered e-commerce platform with Gemini API summaries and Stripe.\n3. **Academic LMS Portal**: Custom LMS built with React, Node.js, and GSAP timeline layouts.\n\nType **'hire'** to start a custom project!",
+    
+    contact: "You can reach out to Agha through:\n\n* **WhatsApp**: [Chat directly on WhatsApp](https://wa.me/923306853209)\n* **Contact Form**: Scroll down and fill out the contact form on this page.\n* **Book a Call**: Schedule a call directly on the [Consultation Page](consultation.html).\n\nAgha typically responds within 24 hours!",
+    
+    skills: "Agha's full tech stack:\n\n* **Frontend**: HTML5, CSS3, JS, TS, React.js, Next.js, Tailwind CSS, Figma.\n* **Backend & DB**: Node.js, Python, Supabase, Firebase, MongoDB, PostgreSQL, REST APIs.\n* **Tools & DevOps**: Docker, GitHub, AWS.",
+    
+    pricing: "Agha's pricing details:\n\n* **Active Offer**: Get **20% Off** for the first 3 clients this month!\n* **Interactive Planner**: Try the **Project Planner** widget below to calculate instant estimates and timelines!\n* **Custom Quote**: Reach out directly via WhatsApp to discuss detailed scope and requirements.",
+    
+    fallback: "I couldn't find details on that. Try clicking one of the suggestions or type a keyword:\n\n* **'services'** - Services details\n* **'projects'** - Portfolio & case studies\n* **'skills'** - Tech stack\n* **'hire'** - Contact & WhatsApp details\n* **'pricing'** - Pricing & discount offers"
+  };
+
+  // Toggle Chat window
+  triggerBtn.addEventListener('click', () => {
+    chatWindow.classList.add('active');
+    triggerBtn.style.display = 'none';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    chatWindow.classList.remove('active');
+    triggerBtn.style.display = 'flex';
+  });
+
+  // Suggestion buttons click handler
+  suggestButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const question = btn.getAttribute('data-question');
+      if (question) {
+        handleUserMessage(question);
+      }
+    });
+  });
+
+  // Input submit handler
+  messageForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const message = inputField.value.trim();
+    if (message) {
+      handleUserMessage(message);
+      inputField.value = '';
+    }
+  });
+
+  function handleUserMessage(text) {
+    // Add user message bubble
+    appendMessage(text, 'user-msg');
+    
+    // Add typing indicator
+    const typingId = appendTypingIndicator();
+    
+    // Respond after small delay to feel like direct AI typing
+    setTimeout(() => {
+      removeTypingIndicator(typingId);
+      const botResponse = getChatbotResponse(text);
+      appendMessage(botResponse, 'bot-msg');
+    }, 600 + Math.random() * 500);
+  }
+
+  function getChatbotResponse(userMessage) {
+    const msg = userMessage.toLowerCase().trim();
+    
+    if (msg.includes('service') || msg.includes('offer') || msg.includes('do') || msg.includes('capabilities') || msg.includes('work detail')) {
+      return chatbotKnowledge.services;
+    }
+    if (msg.includes('project') || msg.includes('work') || msg.includes('portfolio') || msg.includes('almustafa') || msg.includes('bookship') || msg.includes('lms')) {
+      return chatbotKnowledge.projects;
+    }
+    if (msg.includes('hire') || msg.includes('contact') || msg.includes('reach') || msg.includes('whatsapp') || msg.includes('number') || msg.includes('email') || msg.includes('phone') || msg.includes('cv') || msg.includes('resume')) {
+      return chatbotKnowledge.contact;
+    }
+    if (msg.includes('skill') || msg.includes('tech') || msg.includes('language') || msg.includes('framework') || msg.includes('python') || msg.includes('react') || msg.includes('node') || msg.includes('database')) {
+      return chatbotKnowledge.skills;
+    }
+    if (msg.includes('price') || msg.includes('cost') || msg.includes('rate') || msg.includes('budget') || msg.includes('discount') || msg.includes('off') || msg.includes('charges') || msg.includes('pay')) {
+      return chatbotKnowledge.pricing;
+    }
+    if (msg.includes('hello') || msg.includes('hi') || msg.includes('hey') || msg.includes('greeting') || msg.includes('sup') || msg.includes('yo')) {
+      return "Hi there! I am Agha's AI Assistant. I have full knowledge of his website and portfolio. Ask me anything!";
+    }
+    
+    return chatbotKnowledge.fallback;
+  }
+
+  function appendMessage(text, className) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `chatbot-message ${className}`;
+    
+    const msgBubble = document.createElement('div');
+    msgBubble.className = 'msg-bubble';
+    
+    if (className === 'bot-msg') {
+      msgBubble.innerHTML = formatResponse(text);
+    } else {
+      msgBubble.textContent = text;
+    }
+    
+    messageDiv.appendChild(msgBubble);
+    messagesContainer.appendChild(messageDiv);
+    
+    // Scroll to bottom
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  }
+
+  function appendTypingIndicator() {
+    const typingId = 'typing-' + Date.now();
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'chatbot-message bot-msg';
+    typingDiv.id = typingId;
+    
+    typingDiv.innerHTML = `
+      <div class="msg-bubble">
+        <div class="typing-dots">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+    `;
+    
+    messagesContainer.appendChild(typingDiv);
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    return typingId;
+  }
+
+  function removeTypingIndicator(id) {
+    const indicator = document.getElementById(id);
+    if (indicator) {
+      indicator.remove();
+    }
+  }
+
+  function formatResponse(text) {
+    // Convert markdown links [text](url) to anchors
+    let formatted = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" style="color: #ffffff; text-decoration: underline; font-weight: 500;">$1</a>');
+    // Double newlines to double breaks
+    formatted = formatted.replace(/\n\n/g, '<br><br>');
+    // Single newlines to breaks
+    formatted = formatted.replace(/\n/g, '<br>');
+    return formatted;
+  }
+});

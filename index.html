@@ -132,7 +132,7 @@
     <div class="about-grid">
       <div class="about-img-wrap reveal reveal-left">
         <div class="about-img-frame">
-          <img src="Assets/download.jpg" alt="AGHA working portrait">
+          <img src="Assets/agha-2nd section (1).jpg" alt="AGHA working portrait">
         </div>
       </div>
       
@@ -188,52 +188,63 @@
     <h2 class="section-title">Core Skills</h2>
   </div>
   
+  <!-- Skills Filters -->
+  <div class="filter-tabs reveal" id="skills-filter-tabs">
+    <button class="filter-tab active" data-filter="all">All</button>
+    <button class="filter-tab" data-filter="frontend">Frontend</button>
+    <button class="filter-tab" data-filter="backend">Backend & Database</button>
+    <button class="filter-tab" data-filter="ai">AI & Automation</button>
+    <button class="filter-tab" data-filter="tools">Tools & Design</button>
+  </div>
+  
   <div class="skills-grid">
     
     <!-- LAYER 1: FRONTEND & CORE -->
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-html5-plain colored"></i></div><span class="skill-name">HTML5</span></div><div class="card-back"><h4 class="back-title">HTML5</h4><p class="back-desc">Semantic markup, SEO optimization, and structural foundation for modern web apps.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-html5-plain colored"></i></div><span class="skill-name">HTML5</span></div><div class="card-back"><h4 class="back-title">HTML5</h4><p class="back-desc">Semantic markup, SEO optimization, and structural foundation for modern web apps.</p></div></div></div>
     
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-css3-plain colored"></i></div><span class="skill-name">CSS3</span></div><div class="card-back"><h4 class="back-title">CSS3</h4><p class="back-desc">Advanced layouts using Flexbox/Grid, custom variables, and responsive stylesheets.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-css3-plain colored"></i></div><span class="skill-name">CSS3</span></div><div class="card-back"><h4 class="back-title">CSS3</h4><p class="back-desc">Advanced layouts using Flexbox/Grid, custom variables, and responsive stylesheets.</p></div></div></div>
     
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div><span class="skill-name">JavaScript</span></div><div class="card-back"><h4 class="back-title">JavaScript</h4><p class="back-desc">ES6+, async programming, DOM manipulation, and dynamic client-side logic.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-javascript-plain colored"></i></div><span class="skill-name">JavaScript</span></div><div class="card-back"><h4 class="back-title">JavaScript</h4><p class="back-desc">ES6+, async programming, DOM manipulation, and dynamic client-side logic.</p></div></div></div>
     
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-typescript-plain colored"></i></div><span class="skill-name">TypeScript</span></div><div class="card-back"><h4 class="back-title">TypeScript</h4><p class="back-desc">Strict type-safety, interface design, and scalable architecture for complex systems.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-typescript-plain colored"></i></div><span class="skill-name">TypeScript</span></div><div class="card-back"><h4 class="back-title">TypeScript</h4><p class="back-desc">Strict type-safety, interface design, and scalable architecture for complex systems.</p></div></div></div>
 
     <!-- LAYER 2: FRAMEWORKS & BACKEND -->
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-react-original colored"></i></div><span class="skill-name">React.js</span></div><div class="card-back"><h4 class="back-title">React.js</h4><p class="back-desc">Component-driven UI, custom hooks, state management, and virtual DOM performance.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-react-original colored"></i></div><span class="skill-name">React.js</span></div><div class="card-back"><h4 class="back-title">React.js</h4><p class="back-desc">Component-driven UI, custom hooks, state management, and virtual DOM performance.</p></div></div></div>
     
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="36" height="36" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#000"/><path d="M102.392 110.385L50.5693 44H38v40h9.2435V54.9664l42.6685 54.4986c4.275-2.529 8.214-5.558 11.77-9.08z" fill="#fff"/><rect x="85" y="44" width="9.2435" height="40" fill="#fff"/></svg></div><span class="skill-name">Next.js</span></div><div class="card-back"><h4 class="back-title">Next.js</h4><p class="back-desc">Production-grade SSR, static generation, app router optimization, and API paths.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="36" height="36" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64" fill="#000"/><path d="M102.392 110.385L50.5693 44H38v40h9.2435V54.9664l42.6685 54.4986c4.275-2.529 8.214-5.558 11.77-9.08z" fill="#fff"/><rect x="85" y="44" width="9.2435" height="40" fill="#fff"/></svg></div><span class="skill-name">Next.js</span></div><div class="card-back"><h4 class="back-title">Next.js</h4><p class="back-desc">Production-grade SSR, static generation, app router optimization, and API paths.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-tailwindcss-original colored"></i></div><span class="skill-name">Tailwind</span></div><div class="card-back"><h4 class="back-title">Tailwind CSS</h4><p class="back-desc">Utility-first styling, design tokens, responsive grids, and ultra-fast UI rendering.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-tailwindcss-original colored"></i></div><span class="skill-name">Tailwind</span></div><div class="card-back"><h4 class="back-title">Tailwind CSS</h4><p class="back-desc">Utility-first styling, design tokens, responsive grids, and ultra-fast UI rendering.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div><span class="skill-name">Node.js</span></div><div class="card-back"><h4 class="back-title">Node.js</h4><p class="back-desc">Event-driven, asynchronous backend runtimes for heavy concurrent traffic.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-nodejs-plain colored"></i></div><span class="skill-name">Node.js</span></div><div class="card-back"><h4 class="back-title">Node.js</h4><p class="back-desc">Event-driven, asynchronous backend runtimes for heavy concurrent traffic.</p></div></div></div>
 
     <!-- LAYER 3: DATABASE & AUTOMATION -->
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-python-plain colored"></i></div><span class="skill-name">Python</span></div><div class="card-back"><h4 class="back-title">Python</h4><p class="back-desc">Scripting, advanced automation, data transformations, and custom AI tooling agent engines.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend ai"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-python-plain colored"></i></div><span class="skill-name">Python</span></div><div class="card-back"><h4 class="back-title">Python</h4><p class="back-desc">Scripting, advanced automation, data transformations, and custom AI tooling agent engines.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/supabase.svg" class="invert-img" alt="Supabase logo"></div><span class="skill-name">Supabase</span></div><div class="card-back"><h4 class="back-title">Supabase</h4><p class="back-desc">Open-source Firebase alternative, real-time subscriptions, and scalable PostgreSQL backend.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-supabase-plain colored"></i></div><span class="skill-name">Supabase</span></div><div class="card-back"><h4 class="back-title">Supabase</h4><p class="back-desc">Open-source Firebase alternative, real-time subscriptions, and scalable PostgreSQL backend.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-firebase-plain colored"></i></div><span class="skill-name">Firebase</span></div><div class="card-back"><h4 class="back-title">Firebase</h4><p class="back-desc">Cloud Firestore, authentication, serverless functions, and real-time database management.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-firebase-plain colored"></i></div><span class="skill-name">Firebase</span></div><div class="card-back"><h4 class="back-title">Firebase</h4><p class="back-desc">Cloud Firestore, authentication, serverless functions, and real-time database management.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-mongodb-plain colored"></i></div><span class="skill-name">MongoDB</span></div><div class="card-back"><h4 class="back-title">MongoDB</h4><p class="back-desc">NoSQL flexible dynamic schemas, complex aggregation pipelines, and big indexing loops.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-mongodb-plain colored"></i></div><span class="skill-name">MongoDB</span></div><div class="card-back"><h4 class="back-title">MongoDB</h4><p class="back-desc">NoSQL flexible dynamic schemas, complex aggregation pipelines, and big indexing loops.</p></div></div></div>
 
     <!-- LAYER 4: TOOLS & INFRA -->
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div><span class="skill-name">PostgreSQL</span></div><div class="card-back"><h4 class="back-title">PostgreSQL</h4><p class="back-desc">Relational databases, optimized structured querying, transactions, and robust schemas.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-postgresql-plain colored"></i></div><span class="skill-name">PostgreSQL</span></div><div class="card-back"><h4 class="back-title">PostgreSQL</h4><p class="back-desc">Relational databases, optimized structured querying, transactions, and robust schemas.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="fa-solid fa-network-wired text-cyan"></i></div><span class="skill-name">REST APIs</span></div><div class="card-back"><h4 class="back-title">REST APIs</h4><p class="back-desc">Secure microservice routing, standardized endpoints, parameters, and CRUD controllers.</p></div></div></div>
+    <div class="skill-card reveal" data-category="backend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="fa-solid fa-network-wired text-cyan"></i></div><span class="skill-name">REST APIs</span></div><div class="card-back"><h4 class="back-title">REST APIs</h4><p class="back-desc">Secure microservice routing, standardized endpoints, parameters, and CRUD controllers.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><img src="https://api.iconify.design/logos:openai-icon.svg" class="invert-img" alt="OpenAI logo"></div><span class="skill-name">OpenAI</span></div><div class="card-back"><h4 class="back-title">OpenAI API</h4><p class="back-desc">LLM processing, customized multi-agent prompts, semantic fine-tuning, and neural vectors.</p></div></div></div>
+    <div class="skill-card reveal" data-category="ai"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-openai-plain"></i></div><span class="skill-name">OpenAI</span></div><div class="card-back"><h4 class="back-title">OpenAI API</h4><p class="back-desc">LLM processing, customized multi-agent prompts, semantic fine-tuning, and neural vectors.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-docker-plain colored"></i></div><span class="skill-name">Docker</span></div><div class="card-back"><h4 class="back-title">Docker</h4><p class="back-desc">Application containerization, sandbox image setups, microservices orchestration.</p></div></div></div>
+    <div class="skill-card reveal" data-category="ai"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z" fill="url(#gemini-gradient)"/><defs><linearGradient id="gemini-gradient" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#9bc5ff"/><stop offset="50%" stop-color="#c19bff"/><stop offset="100%" stop-color="#ff9be2"/></linearGradient></defs></svg></div><span class="skill-name">Gemini API</span></div><div class="card-back"><h4 class="back-title">Gemini API</h4><p class="back-desc">Multimodal processing, Google AI integrations, function calling agents, and context-window optimizations.</p></div></div></div>
+
+    <div class="skill-card reveal" data-category="tools"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-docker-plain colored"></i></div><span class="skill-name">Docker</span></div><div class="card-back"><h4 class="back-title">Docker</h4><p class="back-desc">Application containerization, sandbox image setups, microservices orchestration.</p></div></div></div>
 
     <!-- LAYER 5: DESIGN & DEVOPS -->
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-github-original colored text-white"></i></div><span class="skill-name">GitHub</span></div><div class="card-back"><h4 class="back-title">Git Engine</h4><p class="back-desc">Version control, branch protection workflows, secure CI/CD, and conflict resolution.</p></div></div></div>
+    <div class="skill-card reveal" data-category="tools"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-github-original colored text-white"></i></div><span class="skill-name">GitHub</span></div><div class="card-back"><h4 class="back-title">Git Engine</h4><p class="back-desc">Version control, branch protection workflows, secure CI/CD, and conflict resolution.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-wordpress-plain colored text-wp"></i></div><span class="skill-name">WordPress</span></div><div class="card-back"><h4 class="back-title">WordPress</h4><p class="back-desc">Custom theme integration, high-tier corporate web layouts, and plugin optimization.</p></div></div></div>
+    <div class="skill-card reveal" data-category="frontend"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-wordpress-plain colored text-wp"></i></div><span class="skill-name">WordPress</span></div><div class="card-back"><h4 class="back-title">WordPress</h4><p class="back-desc">Custom theme integration, high-tier corporate web layouts, and plugin optimization.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div><span class="skill-name">AWS</span></div><div class="card-back"><h4 class="back-title">AWS Cloud</h4><p class="back-desc">Cloud storage infrastructure, routing layers, server hosting buckets, and static drops.</p></div></div></div>
+    <div class="skill-card reveal" data-category="tools"><div class="card-inner"><div class="card-front"><div class="skill-icon"><i class="devicon-amazonwebservices-plain-wordmark colored"></i></div><span class="skill-name">AWS</span></div><div class="card-back"><h4 class="back-title">AWS Cloud</h4><p class="back-desc">Cloud storage infrastructure, routing layers, server hosting buckets, and static drops.</p></div></div></div>
 
-    <div class="skill-card reveal"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z" fill="#F24E1E"/><path d="M4 6a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#FF7262"/><path d="M4 14a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#A259FF"/><path d="M12 10a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z" fill="#1ABC9C"/><path d="M4 22a4 4 0 0 1 4-4h4v4H8a4 4 0 0 1-4-4z" fill="#0ACF83"/></svg></div><span class="skill-name">Figma</span></div><div class="card-back"><h4 class="back-title">Figma UI/UX</h4><p class="back-desc">High-fidelity wireframes, responsive autolayout, design systems, and micro-flows.</p></div></div></div>
+    <div class="skill-card reveal" data-category="tools"><div class="card-inner"><div class="card-front"><div class="skill-icon"><svg width="34" height="34" viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4z" fill="#F24E1E"/><path d="M4 6a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#FF7262"/><path d="M4 14a4 4 0 0 1 4-4h4v8H8a4 4 0 0 1-4-4z" fill="#A259FF"/><path d="M12 10a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4z" fill="#1ABC9C"/><path d="M4 22a4 4 0 0 1 4-4h4v4H8a4 4 0 0 1-4-4z" fill="#0ACF83"/></svg></div><span class="skill-name">Figma</span></div><div class="card-back"><h4 class="back-title">Figma UI/UX</h4><p class="back-desc">High-fidelity wireframes, responsive autolayout, design systems, and micro-flows.</p></div></div></div>
   </div>
 </section>
   <!-- --- 5.2 SERVICES SECTION --- -->
@@ -393,35 +404,37 @@
           <div class="project-links">
             <button class="project-btn project-btn-primary" onclick="openCaseStudy('almustafa')">Case Study</button>
             <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+            <a href="https://github.com/irtizarizvi88" target="_blank" class="project-btn project-btn-secondary"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
         </div>
       </div>
       
-      <!-- Project 2: The Book Ship -->
+      <!-- Project 2: AI Agency Enterprise Website -->
       <div class="project-card reveal">
         <div class="project-img">
-          <img src="Assets/the-book-ship.png" alt="The Book Ship Platform">
+          <img src="Assets/the-book-ship.png" alt="AI Agency Enterprise Website">
         </div>
         <div class="project-content">
           <div class="project-tags">
-            <span class="project-tag">Gemini API</span>
             <span class="project-tag">Next.js</span>
-            <span class="project-tag">Stripe API</span>
-            <span class="project-tag">Redis</span>
+            <span class="project-tag">Gemini API</span>
             <span class="project-tag">Node.js</span>
+            <span class="project-tag">Express.js</span>
+            <span class="project-tag">PostgreSQL</span>
           </div>
-          <h3 class="project-title">The Book Ship</h3>
+          <h3 class="project-title">AI Agency Enterprise Website</h3>
           <p class="project-desc">
-            A premium AI-powered e-commerce platform integrated with Gemini API for semantic book summaries, fast Redis caching pipelines, and secure Stripe payment gateways.
+            Enterprise-grade AI agency web platform featuring advanced automation, LLM scaling architectures with Gemini API, and a robust Express/PostgreSQL backend.
           </p>
           <div class="project-links">
             <button class="project-btn project-btn-primary" onclick="openCaseStudy('bookship')">Case Study</button>
             <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+            <a href="https://github.com/irtizarizvi88" target="_blank" class="project-btn project-btn-secondary"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
         </div>
       </div>
       
-      <!-- Project 3: Mathematician (Sir Mujtaba Kamal) -->
+      <!-- Project 3: Academic LMS Portal -->
       <div class="project-card reveal">
         <div class="project-img">
           <img src="Assets/mujtaba-kamal.png" alt="Sir Mujtaba Kamal Academic Platform">
@@ -441,6 +454,7 @@
           <div class="project-links">
             <button class="project-btn project-btn-primary" onclick="openCaseStudy('mathematician')">Case Study</button>
             <a href="consultation.html" class="project-btn project-btn-secondary">Live Demo</a>
+            <a href="https://github.com/irtizarizvi88" target="_blank" class="project-btn project-btn-secondary"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
         </div>
       </div>
@@ -693,16 +707,6 @@
       <button id="slider-next" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </div>
-</section> 
-
-
-    <!-- Controls -->
-    <div class="slider-controls">
-      <button id="slider-prev" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
-      <div id="slider-dots" class="slider-dots"></div>
-      <button id="slider-next" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-  </div>
 </section>
 
   <!-- --- 8.5 FAQ SECTION --- -->
@@ -714,7 +718,7 @@
 
       <div class="faq-container reveal">
         <!-- FAQ Item 1 -->
-        <div class="faq-item reveal">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>What custom AI and automation integrations do you provide?</span>
             <i class="fa-solid fa-chevron-down faq-icon"></i>
@@ -964,6 +968,56 @@
       </div>
     </div>
   </footer>
+
+  <!-- --- AI CHATBOT WIDGET --- -->
+  <div id="ai-chatbot-container" class="chatbot-container">
+    <!-- Chat Trigger Button -->
+    <button id="chatbot-trigger" class="chatbot-trigger-btn" aria-label="Open AI Assistant">
+      <i class="fa-solid fa-robot"></i>
+      <span class="chatbot-pulse-ring"></span>
+    </button>
+    
+    <!-- Chat Window -->
+    <div id="chatbot-window" class="chatbot-window-box">
+      <!-- Header -->
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">
+            <i class="fa-solid fa-robot"></i>
+            <span class="online-indicator"></span>
+          </div>
+          <div>
+            <h4 class="chatbot-header-title">AGHA's AI Assistant</h4>
+            <span class="chatbot-header-subtitle">Online • Instant Responder</span>
+          </div>
+        </div>
+        <button id="chatbot-close-btn" class="chatbot-close-btn">&times;</button>
+      </div>
+      
+      <!-- Messages Body -->
+      <div id="chatbot-messages" class="chatbot-messages-body">
+        <div class="chatbot-message bot-msg">
+          <div class="msg-bubble">
+            Hello! I am Agha's AI Assistant. I can help you learn more about Agha's skills, projects, and custom services. What would you like to know?
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quick Suggestions -->
+      <div class="chatbot-suggestions">
+        <button class="chatbot-suggest-btn" data-question="What services do you offer?">Services</button>
+        <button class="chatbot-suggest-btn" data-question="Show me your projects.">Featured Projects</button>
+        <button class="chatbot-suggest-btn" data-question="How can I hire you?">Contact / Hire</button>
+        <button class="chatbot-suggest-btn" data-question="Do you have any discount offers?">Active Discount</button>
+      </div>
+      
+      <!-- Input Area -->
+      <form id="chatbot-input-form" class="chatbot-input-area">
+        <input type="text" id="chatbot-input-field" class="chatbot-input-field" placeholder="Ask anything about Agha..." required autocomplete="off">
+        <button type="submit" class="chatbot-send-btn" aria-label="Send message"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
 
   <!-- JS Logic -->
   <script src="script.js"></script>
